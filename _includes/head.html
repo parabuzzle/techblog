@@ -1,0 +1,42 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="{{ site.description }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+  <!-- feed stuff -->
+  {% feed_meta %}
+
+  <!-- Open Graph Stuff -->
+  {% if page.og_type %}<meta property="og:type" content="{{page.og_type}}"/>{% else %}<meta property="og:type" content="blog"/>{% endif %}
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+  {% if page.og_description %}<meta property="og:description" content="{{ page.og_description }}"/> {% else %}<meta property="og:description" content="{{ site.description }}"/>{% endif %}
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
+  {% if page.og_image %}<meta property="og:image" content="{{page.og_image}}"/>{% else %}<meta property="og:image" content="http://www.mikeheijmans.com/img/mike.jpg"/>{% endif %}
+
+  <!-- Twitter Card Stuff -->
+  {% if page.twitter_card %}<meta property="twitter:card" content="{{page.twitter_card}}"/>{% else %}<meta property="twitter:card" content="summary_large_image"/>{% endif %}
+  <meta name="twitter:site" content="@parabuzzle"/>
+  <meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+  {% if page.og_description %}<meta property="twitter:description" content="{{ page.og_description }}"/> {% else %}<meta property="twitter:description" content="{{ site.description }}"/>{% endif %}
+  <meta property="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
+  {% if page.og_image %}<meta property="twitter:image" content="{{page.og_image}}"/>{% else %}<meta property="twitter:image" content="http://www.mikeheijmans.com/img/mike.jpg"/>{% endif %}
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/social.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/merbivore.css" | prepend: site.baseurl }}">
+
+  <!-- TypeKit -->
+  <script type="text/javascript" src="//use.typekit.net/wcr1wgz.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+</head>

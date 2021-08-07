@@ -1,0 +1,206 @@
+/* Social-Search */
+.social-search {
+	float: right;
+	width: 306px;
+	padding-right: 20px;
+	margin-top: 40px;
+}
+ul.social-profile {
+	list-style: none;
+	margin: -10px 0 0;
+}
+ul.social-profile {
+
+}
+ul.social-profile li {
+	float: left;
+	margin: 10px 10px 0 0;
+}
+
+ul.social-profile li {
+	margin: 10px 0 0 10px;
+}
+ul.social-profile li a {
+	text-indent: -99999px;
+}
+ul.social-profile li a {
+	background: url(/img/social-profile.png) right bottom no-repeat;
+    display: block;
+	height: 33px;
+    width: 33px;
+	text-indent: -99999px;
+
+}
+ul.social-profile li.facebook a {
+	background-position: 0 0;
+}
+ul.social-profile li.facebook a:hover {
+	background-position: 0 -43px;
+}
+ul.social-profile li.twitter a {
+	background-position: -44px 0;
+}
+ul.social-profile li.twitter a:hover {
+	background-position: -44px -43px;
+}
+ul.social-profile li.you-tube a {
+	background-position: -87px 0;
+}
+ul.social-profile li.you-tube a:hover {
+	background-position: -87px -43px;
+}
+ul.social-profile li.rss a {
+	background-position: -130px 0;
+}
+ul.social-profile li.rss a:hover {
+	background-position: -130px -43px;
+}
+ul.social-profile li.google-plus a {
+	background-position: -173px 0;
+}
+ul.social-profile li.google-plus a:hover {
+	background-position: -173px -43px;
+}
+ul.social-profile li.pinterest a {
+	background-position: -216px 0;
+}
+ul.social-profile li.pinterest a:hover {
+	background-position: -216px -43px;
+}
+ul.social-profile li.slideshare a {
+	background-position: -259px 0;
+}
+ul.social-profile li.slideshare a:hover {
+	background-position: -259px -43px;
+}
+ul.social-profile li.foursquare a {
+	background-position: -302px 0;
+}
+ul.social-profile li.foursquare a:hover {
+	background-position: -302px -43px;
+}
+ul.social-profile li.vimeo a {
+	background-position: -345px 0;
+}
+ul.social-profile li.vimeo a:hover {
+	background-position: -345px -43px;
+}
+ul.social-profile li.myspace a {
+	background-position: -388px 0;
+}
+ul.social-profile li.myspace a:hover {
+	background-position: -388px -43px;
+}
+ul.social-profile li.flickr a {
+	background-position: -431px 0;
+}
+ul.social-profile li.flickr a:hover {
+	background-position: -431px -43px;
+}
+ul.social-profile li.dribbble a {
+	background-position: -474px 0;
+}
+ul.social-profile li.dribbble a:hover {
+	background-position: -474px -43px;
+}
+ul.social-profile li.wordpress a {
+	 background-position: -517px 0;
+}
+ul.social-profile li.wordpress a:hover {
+	background-position: -517px -43px;
+}
+ul.social-profile li.deviantart a {
+	background-position: -560px 0;
+}
+ul.social-profile li.deviantart a:hover {
+	background-position: -560px -43px;
+}
+ul.social-profile li.linkedin a {
+	background-position: -603px 0;
+}
+ul.social-profile li.linkedin a:hover {
+	background-position: -603px -43px;
+}
+ul.social-profile li.tumblr a {
+   	background-position: -646px 0;
+
+}
+ul.social-profile li.tumblr a:hover {
+	background-position: -646px -43px;
+}
+ul.social-profile li.delicious a {
+	background-position: -689px 0;
+}
+ul.social-profile li.delicious a:hover {
+	background-position: -689px -43px;
+}
+ul.social-profile li.lastfm a {
+   	background-position: -732px 0;
+
+}
+ul.social-profile li.lastfm a:hover {
+	background-position: -732px -43px;
+}
+ul.social-profile li.instagram a {
+   	background-position: -776px 0;
+
+}
+ul.social-profile li.instagram a:hover {
+	background-position: -776px -43px;
+}
+ul.social-profile li.github a {
+	background-position: -818px 0;
+}
+ul.social-profile li.github a:hover {
+	background-position: -818px -43px;
+}
+ul.social-profile li.odnoklassniki a {
+	background-position: -860px 0;
+}
+ul.social-profile li.odnoklassniki a:hover {
+	background-position: -860px -43px;
+}
+ul.social-profile li.vkontakte a {
+	background-position: -903px 0;
+}
+ul.social-profile li.vkontakte a:hover {
+	background-position: -903px -43px;
+}
+ul.social-profile li.myworld a {
+	background-position: -946px 0;
+}
+ul.social-profile li.myworld a:hover {
+	background-position: -946px -43px;
+}
+ul.social-profile li.goodreads a {
+	background-position: -989px 0;
+}
+ul.social-profile li.goodreads a:hover {
+	background-position: -989px -43px;
+}
+ul.social-profile li.skype a {
+	background-position: -1033px 0;
+}
+ul.social-profile li.skype a:hover {
+	background-position: -1033px -43px;
+}
+ul.social-profile li.soundcloud a {
+	background-position: -1076px 0;
+}
+ul.social-profile li.soundcloud a:hover {
+	background-position: -1076px -43px;
+}
+ul.social-profile li.email a {
+	background-position: -1119px 0;
+}
+ul.social-profile li.email a:hover {
+	background-position: -1119px -43px;
+}
+
+#social-links {
+	padding:10px;
+}
+
+.clear {
+	clear:both;
+}

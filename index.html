@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<div class="home">
+
+
+  <ul class="posts">
+    {% for post in paginator.posts %}
+      <li>
+        <div class="post-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+        <div class="post-date">{{ post.date | date: "%b %-d, %Y" }}</div>
+        {% if post.preview %}
+          <div class="post-preview"> {{ post.preview }}...</div>
+        {% else %}
+          <div class="post-preview">{{ post.content | strip_html | truncatewords:45}}</div>
+        {% endif %}
+        <div class="readon"><a href="{{post.url | prepend: site.baseurl}}">READ ON</a></div>
+      </li>
+    {% endfor %}
+  </ul>
+      <!-- Pagination links -->
+    {% if paginator.total_pages > 1 %}
+      <div class="pagination">
+        {% if paginator.previous_page %}
+          <a style="padding:0.5em;" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;       Prev</a>
+        {% else %}
+          <span style="padding:0.5em;">&laquo; Prev</span>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+          {% if page == paginator.page %}
+            <em style="padding:0.5em;" >{{ page }}</em>
+          {% elsif page == 1 %}
+            <a style="padding:0.5em;" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+          {% else %}
+            <a style="padding:0.5em;" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num',      page }}">{{ page }}</a>
+          {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+          <a style="padding:0.5em;" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;      </a>
+        {% else %}
+          <span style="padding:0.5em;">Next &raquo;</span>
+        {% endif %}
+      </div>
+    {% endif %}
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
